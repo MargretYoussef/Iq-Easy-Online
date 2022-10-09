@@ -1,34 +1,8 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto:wght@500&display=swap');
-    :root {
-    
-    /* Colors: */
-    --unnamed-color-fca120: #FCA120;
-    --unnamed-color-dfebff: #DFEBFF;
-    --unnamed-color-fce9fe: #FCE9FE;
-    --unnamed-color-e4f3f8: #E4F3F8;
-    --unnamed-color-0266ff: #0266FF;
-    --unnamed-color-636363: #636363;
-    --unnamed-color-c8e6f1: #C8E6F1;
-    --unnamed-color-7600bc: #7600BC;
-    --unnamed-color-8a00c2: #8A00C2;
-    --unnamed-color-ffffff: #FFFFFF;
-    --unnamed-color-2aa1cc: #2AA1CC;
-    --unnamed-color-191e24: #191E24;
-    
-    /* Font/text values */
-    --unnamed-font-family-montserrat-arabic: Montserrat-Arabic;
-    --unnamed-font-style-normal: normal;
-    --unnamed-font-weight-600: 600px;
-    --unnamed-font-weight-medium: medium;
-    --unnamed-font-size-16: 16px;
-    --unnamed-font-size-18: 18px;
-    /* --unnamed-character-spacing-0: 0px;
-    --unnamed-character-spacing-0-54: 0.54px;
-    --unnamed-line-spacing-19: 19px;
-    --unnamed-line-spacing-22: 22px; */
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Montserrat+Alternates&family=Roboto:wght@500&display=swap');
+
 
     /*----------------------------------------------------------------------*/
    
@@ -114,17 +88,21 @@
         opacity: 1;
     }
     .topleft {
-        position: absolute;
-         top: -280px;
-        left: -230px; 
-        transform: translatey(-5%);
+        position: absolute; 
+        top: 7px;
+        left: 0px; 
+        transform: translatey(-5%); 
+        /* top: -351.5318908691406px;
+        left: -233.20989990234375px;
+        width: 687px;
+        height: 583px; */
 
       }
     .bottomleft{
         position: absolute;
-        bottom: -280px;
-        left: -230px; 
-        transform: translatey(-5%);
+        bottom: 74px;
+        left: 260px; 
+        /* transform: translatey(-5%); */
     }
     #grad3 {
         
