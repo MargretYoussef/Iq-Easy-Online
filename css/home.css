@@ -146,13 +146,6 @@ h4{
     font-size: x-large;
     font-family: 'Exo', sans-serif;
 }
-.adv{
-    text-align: center;
-    color: #585858;
-    /* font-size: medium; */
-    font-family: 'Exo', sans-serif;
-
-}
 .cont8{
     background: transparent linear-gradient(124deg, #FBDAAB 0%, #FCCE7C 24%, #F9B282 49%, #F3A5CD 73%, #B87AC3 100%) 0% 0% no-repeat padding-box;
     box-shadow: 3px 3px 3px #B7B7B729;
