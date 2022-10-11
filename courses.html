@@ -1,0 +1,407 @@
+<!-- <html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <style>
+        .progress {
+            width: 150px;
+            height: 150px !important;
+            float: left;
+            line-height: 150px;
+            background: none;
+            margin: 20px;
+            box-shadow: none;
+            position: relative;
+        }
+
+        .progress:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 12px solid #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .progress>span {
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+        }
+
+        .progress .progress-left {
+            left: 0;
+        }
+
+        .progress .progress-bar {
+            width: 100%;
+            height: 100%;
+            background: none;
+            border-width: 12px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+        }
+
+        .progress .progress-left .progress-bar {
+            left: 100%;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-left: 0;
+            -webkit-transform-origin: center left;
+            transform-origin: center left;
+        }
+
+        .progress .progress-right {
+            right: 0;
+        }
+
+        .progress .progress-right .progress-bar {
+            left: -100%;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
+            border-right: 0;
+            -webkit-transform-origin: center right;
+            transform-origin: center right;
+            animation: loading-1 1.8s linear forwards;
+        }
+
+        .progress .progress-value {
+            width: 90%;
+            height: 90%;
+            border-radius: 50%;
+            background: #000;
+            font-size: 24px;
+            color: #fff;
+            line-height: 135px;
+            text-align: center;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+
+        .progress.blue .progress-bar {
+            border-color: #049dff;
+        }
+
+        .progress.blue .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+
+        .progress.yellow .progress-bar {
+            border-color: #fdba04;
+        }
+
+        .progress.yellow .progress-right .progress-bar {
+            animation: loading-3 1.8s linear forwards;
+        }
+
+        .progress.yellow .progress-left .progress-bar {
+            animation: none;
+        }
+
+        @keyframes loading-1 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes loading-2 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(144deg);
+                transform: rotate(144deg);
+            }
+        }
+
+        @keyframes loading-3 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-md-6">
+
+
+
+            <div class="progress blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+            </div>
+
+
+            <div class="progress yellow">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">37.5%</div>
+            </div>
+
+
+            <div class="progress red">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">50%</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>courses</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <!--bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- fontawsome -->
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css'> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- CSS custom -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" id="grad3">
+            <!--Left/Menue-->
+            <div class="col-md-1 pt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-2 mx-4">
+                        <a href="home.html">
+                            <img src="images/logo2.png" alt="logo" id="logo">
+                        </a>
+                    </div>
+                    <!-- <div class="col-md-7 mt-3">
+                        <p style="color: #FFFFFF; font-size: medium;font-weight: 600; font-family: 'Exo', sans-serif;">
+                            Iq Easy Online</p>
+                    </div> -->
+                </div>
+                <div class="row mt-5 m-auto my-5">
+
+
+                    <div class="row my-4">
+                        <a href="home.html" class="btn btn-signup my-3">
+                            <img src="images/Group 25.svg" alt="home" height="80%">
+                        </a>
+                    </div>
+
+
+                    <div class="row my-4">
+                        <a href="courses.html" class="btn btn-log btn-light btn-lg"
+                            style="background-color: white;color: #191E24;padding-right: 30px;">
+                            <img src="images/Group 17.svg" alt="courses">
+                        </a>
+                    </div>
+
+                    <!-- <div class="row">
+                        <a href="profile.html" class="btn btn-signup my-3">
+                            <img src="images/Group 20.svg" alt="" class="mx-2"> Profile
+                        </a>
+                    </div>-->
+
+                    <!-- <div class="row">
+                        <a href="setting.html" class="btn btn-signup my-3">
+                            <img src="images/Group 21.svg" alt="" class="mx-2"> Setting
+                        </a>
+                    </div>  -->
+
+                </div>
+            </div>
+
+            <!--right/courses-->
+            <div class="col-md-11 mt-2 mb-5 px-5" style=" border-radius: 40px; background-color: #FFFFFF;">
+                <!--1/2 row-->
+                <div class="row mt-4">
+                    <!--title/ all courses -->
+                    <div class="col-md-6">
+                        <h4 id="allcourses">All Courses</h4>
+                    </div>
+                    <!--search & notification & profile-->
+                    <div class="col-md-6">
+                        <div class="row">
+                            <!--search-->
+                            <div class="col-md-6">
+                                <form class="navbar-form navbar-left" action="">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="what do you want to learn?"
+                                            name="search" style="width: 380px; height: 50px;padding-left: 30px;">
+                                        <!-- <i class="glyphicon glyphicon-search"></i> -->
+                                        <img src="images/Iconly-Bulk-Search.svg" alt="" style="position: absolute; top:72px;
+                                          right: 593px;
+                                          width: 20px;
+                                          height: 20px;">
+
+                                    </div>
+                                </form>
+                            </div>
+                            <!--notification & profile-->
+                            <div class="col-md-6">
+                                <!-- <i class="glyphicon glyphicon-search"></i>
+                                <i class="glyphicon glyphicon-search"></i> -->
+                                <img src="images/Group 34.svg" alt="" height="50px" class="mt-4"
+                                    style="position: absolute; right: 150px;">
+                                <img src="images/Group 23.svg" alt="" height="50px" class="mt-4"
+                                    style="position: absolute; right: 80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2/2 row-->
+                <div class="row mt-4">
+                    <!--list of courses types-->
+                    <div class="col-md-3">
+                        <!--Title row-->
+                        <div class="row col-12" style="background: #F6F9FD padding-box;
+                        border-radius: 12px;display: inline;">
+                            <h6 class="allCoursesbtn mx-2">All Courses</h6>
+                            <h6 class="currentbtn  mx-2">Current</h6>
+                            <h6 class="archievedbtn mx-2">Archieved</h6>
+                        </div>
+                        <!--courses types /loop-->
+                        <div class="row col-12 mt-3">
+                            <div class="col-md-12">
+                                <!--first course-->
+                                <div class="row course  py-2">
+                                    <div class="col-md-2 px-2 py-2"
+                                        style="background: #C8E6F1 0% 0% no-repeat padding-box; border: 1px solid #FFFFFF;border-radius: 20px;">
+                                        <img src="images/Mask Group 34.png" alt="facebook اعلانات" height="100%"
+                                            width="100%" style="justify-content: center;" class="my-3 mx-2">
+                                    </div>
+                                    <div class="col-md-7"></div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <!--second course-->
+                                <div class="row">
+                                    <div class="col-md-3 my-2 "
+                                        style="background: #C8E6F1 0% 0% no-repeat padding-box; border: 1px solid #FFFFFF;border-radius: 20px;">
+                                        <img src="images/Mask Group 34.png" alt="facebook اعلانات" height="100%"
+                                            width="100%" style="justify-content: center;" class="my-2 mx-2">
+                                    </div>
+                                    <div class="col-md-7"></div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                                <!--third course-->
+                                <div class="row">
+                                    <div class="col-md-3 my-2 "
+                                        style="background: #C8E6F1 0% 0% no-repeat padding-box; border: 1px solid #FFFFFF;border-radius: 20px;">
+                                        <img src="images/Mask Group 34.png" alt="facebook اعلانات" height="100%"
+                                            width="100%" style="justify-content: center;" class="my-2 mx-2">
+                                    </div>
+                                    <div class="col-md-7"></div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <!--courses same type-->
+                    <div class="col-md-9">
+                    </div>
+                </div>
+
+            </div>
+
+            <!--messanger row-->
+            <div>
+                <button>
+                    <img src="images/Messenger.svg" alt="message"
+                        style="position: absolute;bottom: -200px;right: 20px;">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle fontawesome -->
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>

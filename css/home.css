@@ -168,3 +168,39 @@ h4{
     box-shadow: 3px 3px 3px #B7B7B729;
     border-radius: 20px;
 }
+
+
+
+/*--------------------------------courses page----------------------------------*/
+
+#allcourses{
+    text-align: left;
+    font: normal normal 600 30px/46px Poppins;
+    letter-spacing: 0.9px;
+    color: #191E24;
+    
+}
+.allCoursesbtn{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-montserrat-arabic);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal medium 16px/19px Montserrat-Arabic;
+    letter-spacing: 0px;
+    color: #191E24;
+    display: inline;
+    
+}
+.currentbtn,.archievedbtn{
+    font: var(--unnamed-font-style-normal) normal normal var(--unnamed-font-size-16)/25px Poppins;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: left;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    display: inline;
+}
+.course{
+    background: transparent linear-gradient(103deg, #8C6BFF 0%, #3666FF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 15px #4C4C4C29;
+    border-radius: 20px;
+}
