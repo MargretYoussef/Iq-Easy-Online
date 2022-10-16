@@ -3,6 +3,14 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Roboto:wght@500&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,300&family=Montserrat+Alternates&family=Roboto:wght@500&display=swap');
 
+ html {
+    scroll-behavior: smooth;
+    
+  }
+
+  a{
+    text-decoration: none;
+  }
 
 #grad3 {
 
@@ -174,7 +182,6 @@ h4{
 /*--------------------------------courses page----------------------------------*/
 
 #allcourses{
-    text-align: left;
     font: normal normal 600 30px/46px Poppins;
     letter-spacing: 0.9px;
     color: #191E24;
@@ -208,7 +215,97 @@ h4{
     border-radius: 20px;
     margin-bottom: 5px;
 }
-.video{
-    box-shadow: 3px 3px 15px #4C4C4C29;
-    border-radius: 20px;
+video{
+    border-radius: 35px;
 }
+.container-row1{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*----------------------------------------------------------  media query -------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .right-container{
+        width: 95% !important;
+        margin:auto;
+      }
+
+      /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+  
+   
+    .search{
+        display: flex;;
+        display: none;
+    }
+    
+    #allcourses{
+        font-size:large;
+        margin-top: 10px;
+        
+    }
+    .container-row1{
+        display: flex;
+        flex-flow: row;
+    }
+    .profile{
+        flex-shrink: 0;
+        width: 70%;
+    }
+  
+    .text-allcourses{
+        flex-shrink: 0;
+        width: 70%;
+    }
+    .allCoursesbtn{
+        margin: 0%;
+        flex-shrink: 0;
+    }
+    .currentbtn{
+        margin: 0%;
+        flex-shrink: 0;
+    }
+    .archievedbtn{
+        margin: 0%;
+        flex-shrink: 0;
+    }
+    .title-courses{
+        width: 100%;
+        padding:  4% 0% 4% 0% !important;
+    }
+    .video-played{
+        order: 1;
+        margin: 0%;
+        padding: 0%;
+    }
+    .courses-types{
+        order: 2;
+    }
+    video{
+        border-radius: 30px;
+        height: 100%;
+    }
+    .intermediate{
+        height: 35%;
+    }
+    .content{
+        width: 49% !important;
+        flex-shrink: 0 !important;
+
+    }
+    .lectures{
+        width: 51% !important;
+        flex-shrink: 0!important ;
+        font-weight: 100 !important;
+        font-size: 10px !important;
+        margin-top: 7px;
+    }
+
+  }

@@ -202,13 +202,16 @@
 
 <head>
     <title>courses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- fontawsome -->
-    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css'> -->
-    <link rel="stylesheet" href="css/all.min.css">
     <!-- CSS custom -->
     <link rel="stylesheet" href="css/home.css">
 </head>
@@ -219,17 +222,11 @@
         <div class="row" id="grad3">
 
             <!--Left/Menue-->
-            <div class="col-md-1 pt-5 mb-5">
+            <div class="col-md-1 pt-5 mb-3">
                 <div class="row">
-                    <div class="col-md-2 mx-4">
-                        <a href="home.html">
-                            <img src="images/logo2.png" alt="logo" id="logo">
-                        </a>
-                    </div>
-                    <!-- <div class="col-md-7 mt-3">
-                        <p style="color: #FFFFFF; font-size: medium;font-weight: 600; font-family: 'Exo', sans-serif;">
-                            Iq Easy Online</p>
-                    </div> -->
+                    <a href="home.html">
+                        <img src="images/logo2.png" alt="logo" id="logo" height="100%">
+                    </a>
                 </div>
                 <div class="row mt-5 m-auto my-5">
 
@@ -264,58 +261,61 @@
             </div>
 
             <!--right/courses-->
-            <div class="col-md-11 mt-2 mb-5 px-5" style=" border-radius: 40px; background-color: #FFFFFF;">
+            <div class="col-md-11 mt-2 mb-3 px-5 right-container"
+                style=" border-radius: 40px; background-color: #FFFFFF; width: 91%;">
                 <!--1/2 row-->
-                <div class="row mt-4">
+                <div class="row mt-2 container container-row1">
                     <!--title/ all courses -->
-                    <div class="col-md-6">
+                    <div class="col-md-4 my-auto text-allcourses">
                         <h4 id="allcourses">All Courses</h4>
                     </div>
-                    <!--search & notification & profile-->
-                    <div class="col-md-6">
-                        <div class="row">
-                            <!--search-->
-                            <div class="col-md-6">
-                                <form class="navbar-form navbar-left" action="">
-                                    <div>
-                                        <input type="text" class="form-control" placeholder="what do you want to learn?"
-                                            name="search" style="width: 380px; height: 50px;padding-left: 30px;">
-                                        <!-- <i class="glyphicon glyphicon-search"></i> -->
-                                        <img src="images/Iconly-Bulk-Search.svg" alt="" style="position: absolute; top:72px;
-                                          right: 593px;
-                                          width: 20px;
-                                          height: 20px;">
 
-                                    </div>
-                                </form>
+                    <!--search-->
+                    <div class="col-md-6 my-auto mb-5 search">
+                        <form class="navbar-form  " action="">
+                            <div>
+                                <input type="text" class="form-control"
+                                    placeholder="             what do you want to learn?" name="search"
+                                    style="width:90%; height: 90%;padding: 2% 5%;">
+
+                                <img src="images/Iconly-Bulk-Search.svg" alt="search icon" height="3%"
+                                    style="position: absolute; top: 13%; right: 56%;">
+
                             </div>
-                            <!--notification & profile-->
-                            <div class="col-md-6">
-                                <!-- <i class="glyphicon glyphicon-search"></i>
-                                <i class="glyphicon glyphicon-search"></i> -->
-                                <img src="images/Group 34.svg" alt="" height="50px" class="mt-4"
-                                    style="position: absolute; right: 150px;">
-                                <img src="images/Group 23.svg" alt="" height="50px" class="mt-4"
-                                    style="position: absolute; right: 80px;">
-                            </div>
-                        </div>
+                        </form>
                     </div>
+
+                    <!--notification & profile-->
+                    <div class="col-md-2 my-auto profile">
+                        <img src="images/Group 34.svg" alt="" height="25%" width="25%" class="mx-2 notif-profile">
+                        <img src="images/Group 23.svg" alt="" height="25%" width="25%" class="notif-profile">
+                    </div>
+
                 </div>
 
                 <!--2/2 row-->
-                <div class="row mt-4">
-                    <!--list of courses types-->
-                    <div class="col-md-3">
+                <div class="row mt-4 d-flex">
+
+                    <!--list of courses types /left-->
+                    <div class="col-md-3 courses-types">
                         <!--Title row-->
-                        <div class="row col-12" style="background: #F6F9FD padding-box;
-                        border-radius: 12px;display: inline;">
-                            <h6 class="allCoursesbtn mx-2">All Courses</h6>
-                            <h6 class="currentbtn  mx-2">Current</h6>
-                            <h6 class="archievedbtn mx-2">Archieved</h6>
+                        <div class="row col-12 title-courses"
+                            style="background: #F6F9FD;padding: 4% 4% 4% 5%;justify-content: space-around;
+                        border-radius: 12px;display: flex;flex-direction: row;flex-wrap: wrap; flex-shrink: 0;display: inline;">
+                            <a href="" role="button">
+                                <h6 class="allCoursesbtn" style=" flex-shrink: 0;">All Courses</h6>
+                            </a>
+                            <a href="" role="button">
+                                <h6 class="currentbtn" style=" flex-shrink: 0;">Current</h6>
+                            </a>
+                            <a href="" role="button">
+                                <h6 class="archievedbtn" style=" flex-shrink: 0;">Archieved</h6>
+                            </a>
                         </div>
+
                         <!--courses types /loop-->
-                        <div class="row col-12 mt-3">
-                            <div class="col-md-12">
+                        <div class="row col-12 mt-4">
+                            <div class="col-md-12 ">
                                 <!--first course-->
                                 <div class="row course course-bg-gradiant  py-2 px-2 mb-3">
                                     <div class="col-md-2 px-2 py-2" style="background: #C8E6F1;
@@ -398,16 +398,16 @@
 
 
 
-                    <!--courses same type-->
-                    <div class="col-md-9">
+                    <!--courses same type /right-->
+                    <div class="col-md-9 video-played">
                         <!--video displayed-->
                         <div class="row">
-                            <video width="320" height="350" controls style="border-radius: 35px;">
+                            <video width="330px" height="340px" controls>
                                 <source src="movie.mp4" type="video/mp4">
                                 <source src="movie.ogg" type="video/ogg">
                                 Your browser does not support the video tag.
                             </video>
-                            <span>
+                            <span style="display: flex;flex-shrink: 0;">
                                 <img src="images/Group 408.svg" alt="star" style="
                                 opacity: 1;display: inline;" height="20px">
                                 <img src="images/Group 408.svg" alt="star" style="opacity: 1;display: inline;"
@@ -432,7 +432,7 @@
 
                                 <span style="background: #F6F9FD padding-box;
                                 border-radius: 12px;margin-left: 15px;">
-                                    <img src="images/Group 410.svg" alt="" height="50%">
+                                    <img src="images/Group 410.svg" alt="" height="50%" class="intermediate">
                                     <p style="font-size: xx-small;">Intermmediate</p>
                                 </span>
 
@@ -445,109 +445,111 @@
                         <!--list of Course Content-->
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="row d-flex">
-                                    <div class="col-10">
+                                <div class="row" style="display: flex;flex-shrink: 0;">
+                                    <div class="col-10 content">
                                         <h4 style="font-size: large;font-weight: bold;text-align: left;
                                         font-family:Montserrat-Arabic;
                                         color: #191E24;display: inline;">Course Content</h4>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 lectures">
                                         <p style="font-size: medium;font-weight: bold;
                                         font-family:Montserrat-Arabic;
                                         color: #191E24; opacity: 0.5;text-align: right; direction: rtl; ">12 lectures
                                             *
                                             2 hours</p>
                                     </div>
+                                </div>
+                                <!--videos /loop-->
 
-                                    <!--videos /loop-->
-
-                                    <div class="row mb-3">
-                                        <div class="col-md-3 mx-2" id="grad3"
-                                            style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
-                                            <a class=" btn text-white" href="#!" role="button">
-                                                <img src="images/Polygon 2.svg" alt=""
-                                                    style="display: flex; margin-top: 50px; margin-right: 50px;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-4 bg-gradient">
-                                            <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
-                                            <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
-                                                mins</span>
-                                            <br>
-                                            <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
-                                                التسويق</h6>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="#!" role="button">
-                                                <img src="images/Group 418.svg" alt=""
-                                                    style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
-                                            </a>
-                                        </div>
+                                <div class="row mb-3 d-flex">
+                                    <div class="col-md-3 mx-2" id="grad3"
+                                        style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
+                                        <a class=" btn text-white" href="#!" role="button">
+                                            <img src="images/Polygon 2.svg" alt=""
+                                                style="display: flex; margin-top: 50px; margin-right: 50px;">
+                                        </a>
                                     </div>
-
-
-                                    <div class="row  mb-3">
-                                        <div class="col-md-3 mx-2" id="grad3"
-                                            style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
-                                            <a class=" btn text-white" href="#!" role="button">
-                                                <img src="images/Polygon 2.svg" alt=""
-                                                    style="display: flex; margin-top: 50px; margin-right: 50px;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-4 bg-gradient">
-                                            <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
-                                            <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
-                                                mins</span>
-                                            <br>
-                                            <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
-                                                التسويق</h6>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="#!" role="button">
-                                                <img src="images/Group 418.svg" alt=""
-                                                    style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
-                                            </a>
-                                        </div>
+                                    <div class="col-md-7 mt-4 bg-gradient">
+                                        <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
+                                        <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
+                                            mins</span>
+                                        <br>
+                                        <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
+                                            التسويق</h6>
                                     </div>
-
-
-                                    <div class="row  mb-3">
-                                        <div class="col-md-3 mx-2" id="grad3"
-                                            style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
-                                            <a class=" btn text-white" href="#!" role="button">
-                                                <img src="images/Polygon 2.svg" alt=""
-                                                    style="display: flex; margin-top: 50px; margin-right: 50px;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-7 mt-4 bg-gradient">
-                                            <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
-                                            <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
-                                                mins</span>
-                                            <br>
-                                            <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
-                                                التسويق</h6>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="#!" role="button">
-                                                <img src="images/Group 418.svg" alt=""
-                                                    style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
-                                            </a>
-                                        </div>
+                                    <div class="col-md-2">
+                                        <a href="#!" role="button">
+                                            <img src="images/Group 418.svg" alt=""
+                                                style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
+                                        </a>
                                     </div>
                                 </div>
+
+
+                                <div class="row  mb-3">
+                                    <div class="col-md-3 mx-2" id="grad3"
+                                        style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
+                                        <a class=" btn text-white" href="#!" role="button">
+                                            <img src="images/Polygon 2.svg" alt=""
+                                                style="display: flex; margin-top: 50px; margin-right: 50px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7 mt-4 bg-gradient">
+                                        <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
+                                        <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
+                                            mins</span>
+                                        <br>
+                                        <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
+                                            التسويق</h6>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a href="#!" role="button">
+                                            <img src="images/Group 418.svg" alt=""
+                                                style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="row  mb-3">
+                                    <div class="col-md-3 mx-2" id="grad3"
+                                        style="border-radius: 20px 0px 0px 20px; height: 130px; width: 170px;">
+                                        <a class=" btn text-white" href="#!" role="button">
+                                            <img src="images/Polygon 2.svg" alt=""
+                                                style="display: flex; margin-top: 50px; margin-right: 50px;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-7 mt-4 bg-gradient">
+                                        <img src="images/Iconly-Bulk-Time Circle.svg" alt="">
+                                        <span style="font-size: small; font-weight: 300; opacity: 0.7;">02:29
+                                            mins</span>
+                                        <br>
+                                        <h6 class="my-2" style="font-size: medium;font-weight: bold;">مقدمه عن
+                                            التسويق</h6>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a href="#!" role="button">
+                                            <img src="images/Group 418.svg" alt=""
+                                                style="display: flex; margin-top: 30%; margin-right: 0%; margin-left: 100%;">
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
+                        <!--messanger row-->
+                        <div style="display: flex; justify-content: end;">
+                            <a href="#!" role="button">
+                                <img src="images/Messenger.svg" alt="message">
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <!--messanger row-->
-            <div>
-                <a href="#!" role="button">
-                    <img src="images/Messenger.svg" alt="message"
-                        style="position: absolute;bottom: -200px;right: 20px;">
-                </a>
-            </div>
+
         </div>
     </div>
 
@@ -580,8 +582,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle fontawesome -->
-    <script src="js/all.min.js"></script>
 </body>
 
 </html>
